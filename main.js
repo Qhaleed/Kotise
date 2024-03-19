@@ -17,8 +17,12 @@ function validation() {
   if (pass.value !== "" && user.value !== "" && username !== "" && confirmPass.value === pass.value) {
     signup.textContent = "Registration Successful...";
     setTimeout(() => {
-      window.location.href = "components/LoginForm/main/index.html";
+      signup.textContent = "The registration cannot properly work with backend service...  Redirecting... ";
+      
     }, 500);
+    setTimeout(() => {
+      window.location.href = "components/LoginForm/main/index.html";
+    }, 2000);
     
   } else {
     alert("Registration Unsuccessful");
