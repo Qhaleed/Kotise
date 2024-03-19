@@ -1,3 +1,15 @@
 body {
     margin-top: 5%;
 }
+.submitbtn {
+    background-color: rgb(0, 102, 255);
+ }
+ .submitbtn:hover {
+     background-color: hsl(216, 100%, 40%);
+  }
+  .submitbtn:active {
+     background-color: hsl(216, 100%, 70%);
+  }
+  .container2 {
+    display: none;
+  }

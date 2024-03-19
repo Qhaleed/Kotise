@@ -39,6 +39,7 @@ function validateForm() {
 
   if (account) {
     // Redirect to the main page
+    alert('Credentials Acknowledge')
     setTimeout(() => {
       window.location.href="main/index.html";
     }, 100);
