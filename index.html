@@ -1,45 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="styles.css">
-    <title>Kotise Tesla</title>
-</head>
-<body>
-    
-    <div class="navbar" id="navbar">
-        <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">JDM</a></li>
-            <li><a href="">Siundq</a></li>
-        </ul>
 
-        <ul>
-            <li><a href="">CSACs</a></li>
-            <li><a href="">POIKD</a></li>
-            <li><a href="">DKOASDOSA</a></li>
-        </ul>
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
-    </div>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <h1
+      class="text-green text-center font-weight-bold"
+      style="font-size: 40px;"
+    >
+      Form Validation
+    </h1>
 
-    <div class="hero">
+    <h4 class="text-blue text-center font-weight-bold" style="font-size: 20px;">
+      Sign Up
+    </h4>
 
-        <video src="assets/Tokyo Underground. _ 4K.mp4" autoplay loop muted></video>
-        
+    <div class="container">
+      <br />
 
-    </div>
+      <div class="col-lg-5 m-auto d-block">
+        <form action="#" onsubmit="return validation()" class="bg-light">
+          <div class="form-group">
+            <label for="name" class="font-weight-regular"> Name </label>
+            <input
+              type="text"
+              name="name"
+              class="form-control"
+              id="name"
+              autocomplete="off"
+            />
+            <span id="Name" class="text-danger font-weight-regular"> </span>
+          </div>
 
+          <div class="form-group">
+            <label class="font-weight-regular"> Email </label>
+            <input
+              type="text"
+              name="email"
+              class="form-control"
+              id="emails"
+              autocomplete="off"
+            />
+            <span id="emailids" class="text-danger font-weight-regular"> </span>
+          </div>
 
-    <!-- This is for section 2 -->
+          <div class="form-group">
+            <label for="user" class="font-weight-regular"> Username </label>
+            <input
+              type="text"
+              name="user"
+              class="form-control"
+              id="user"
+              autocomplete="off"
+            />
+            <span id="username" class="text-danger font-weight-regular"> </span>
+          </div>
 
-    <div class="second-section">
-        <div class="text-container">
-            <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas enim quasi quisquam sed. Aliquid explicabo officiis nostrum reiciendis sed similique nihil, adipisci non recusandae sapiente enim odit voluptate saepe hic.</h1>
-        </div>
+          <div class="form-group">
+            <label class="font-weight-regular"> Password </label>
+            <input
+              type="password"
+              name="pass"
+              class="form-control"
+              id="pass"
+              autocomplete="off"
+            />
+            <span id="passwords" class="text-danger font-weight-regular">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-regular"> Confirm Password </label>
+            <input
+              type="password"
+              name="conpass"
+              class="form-control"
+              id="conpass"
+              autocomplete="off"
+            />
+            <span id="confrmpass" class="text-danger font-weight-regular">
+            </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-regular"> Mobile Number </label>
+            <input
+              type="text"
+              name="mobile"
+              class="form-control"
+              id="mobileNumber"
+              autocomplete="off"
+            />
+            <span id="mobileno" class="text-danger font-weight-regular"> </span>
+          </div>
+
+          <input
+            type="submit"
+            name="submit"
+            value="Submit"
+            class="btn btn-primary"
+            autocomplete="off"
+          />
+          <input
+            type="reset"
+            name="reset"
+            value="Reset"
+            class="btn btn-secondary"
+            autocomplete="off"
+          />
+          &emsp;&emsp;&emsp;Already have an account?
+          <a href="/components/LoginForm/index.html">Login</a>
+        </form>
+
+        <br /><br />
+      </div>
     </div>
 
     <script src="main.js"></script>
-</body>
+  </body>
 </html>

@@ -1,0 +1,86 @@
+:root {
+    --primary-color: black;
+    --secondary-color: white;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+}
+/* Navbar styles */
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 30px 70px;
+    
+    /* background-color: rgb(19, 24, 63); */
+    position: fixed;
+    z-index: 1;
+    width: 93%;
+    
+}
+.navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+a {
+    text-decoration: none;
+    color: white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+}
+
+li:hover {
+    border-bottom: 2px solid white;
+}
+
+
+
+
+/* Hero styles */
+
+.hero video {
+   opacity: 0.9;
+}
+
+
+
+.hero {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: url(assets/Tokyo\ Underground.\ _\ 4K.mp4);
+    z-index: 0;
+    
+}
+.hero video {
+    width: 100%;
+}
+
+/* second-section */
+
+.second-section {
+    width: 100%;
+    height: 50vh;
+ 
+    
+}
+
+.text-container {
+    width: 60%;
+    margin: auto;
+    margin-top: 10%;
+}
+
+.text-container:hover {
+    color: rgb(64, 241, 241);
+    transition: 500ms;
+    cursor: pointer;
+}

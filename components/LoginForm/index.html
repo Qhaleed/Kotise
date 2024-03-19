@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <h1
+      class="text-green text-center font-weight-bold"
+      style="font-size: 40px;"
+    >
+      Form Validation In JavaScript
+    </h1>
+
+    <h4 class="text-blue text-center font-weight-bold" style="font-size: 20px;">
+      Login
+    </h4>
+
+    <div class="container">
+      <br />
+
+      <div class="col-lg-5 m-auto d-block">
+        <form action="#" class="bg-light">
+          
+          <div class="form-group">
+            <label for="user" class="font-weight-regular"> Username </label>
+            <input
+              type="text"
+           
+              class="form-control"
+              id="user"
+             
+             
+            />
+            <span id="username" class="text-danger font-weight-regular"> </span>
+          </div>
+
+          <div class="form-group">
+            <label class="font-weight-regular"> Password </label>
+            <input
+              type="password"
+              
+              class="form-control"
+              id="pass"
+              
+            />
+            <span id="passwords" class="text-danger font-weight-regular">
+            </span>
+          </div>
+
+
+          <button id="submit" class="submitbtn btn btn-secondary" >
+            submit
+          </button>&emsp;&emsp;&emsp;&emsp; Did not have an account?
+          <!-- <a href="../../index.html">SignUp</a> -->
+          <a href="../main/index.html">SignUp</a>
+        </form>
+
+        <br /><br />
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
