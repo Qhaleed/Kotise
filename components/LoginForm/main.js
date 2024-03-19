@@ -36,13 +36,16 @@ function validateForm() {
 
   // Find the account with the matching username and password
   const account = accounts.find(account => account.username === usernameInput && account.pass === passInput);
-
+  var login = document.getElementById('login'); 
   if (account) {
     // Redirect to the main page
-    alert('Credentials Acknowledge')
+    login.textContent = "Credentials confirmed...";
+    setTimeout(() => {
+      login.textContent = "Redirecting...";
+    }, 500);
     setTimeout(() => {
       window.location.href="main/index.html";
-    }, 100);
+    }, 1000);
 
     
   } else {
