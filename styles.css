@@ -19,7 +19,7 @@ body {
     justify-content: space-between;
     padding: 30px 70px;
     background-color: rgba(73, 70, 70, 0);
-    background-color: rgb(19, 24, 63);
+    /* background-color: rgb(19, 24, 63); */
     position: fixed;
     z-index: 1;
     width: 93%;
