@@ -1,6 +1,6 @@
 
 var submit = document.getElementById("submit");
-
+var signUpForm = document.getElementById("signUpForm");
 submit.addEventListener('click', function(event) {
   event.preventDefault();
 
@@ -9,9 +9,7 @@ submit.addEventListener('click', function(event) {
   var username = document.getElementById("user").value;
   var password = document.getElementById("pass").value;
   var confirmPassword = document.getElementById("conPass").value;
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("emails").value;
-  var mobileNumber = document.getElementById("mobileNumber").value;
+  
 
   // Validate input fields
   if (username === '' || password === '' || confirmPassword === '') {
@@ -27,33 +25,35 @@ if (password !== confirmPassword) {
   var data = {
     username: username,
     password: password,
-    name: name,
-    email:email,
-    mobileNumber: mobileNumber
+    
   };
 
   //Send a POST request to the server
-  fetch('/create-account', {
+  fetch('/api/register', {
     method: 'POST',
     headers: {
       'Content-Type' : 'application/json'
     },
     body: JSON.stringify(data)
   })
+
   .then(response => {
-    if (!response.ok) {
-        throw new Error('Registration Unsuccessful');
-    }
-    return response.json();
-})
-  .then(data => {
-      // Handle success response
+    if (response.ok) {
       alert('Registration Successful');
       window.location.href = "components/LoginForm/main/index.html";
-  })
+    } else {
+      alert('Registration unsuccessful. Error 405');
+      setTimeout(() => {
+        window.location.href = "components/LoginForm/main/index.html";
+      }, 500);
+    }
+   
+})
+
   .catch(error => {
       // Handle error response
       alert(error.message);
+      alert('An error occurred. Please try again.');
 });
 
 

@@ -5,6 +5,7 @@
 * {
     margin: 0;
     padding: 0;
+    
 }
 body {
     background-color: var(--primary-color);
@@ -17,7 +18,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 30px 70px;
+    padding: 17px 70px;
     
     /* background-color: rgb(19, 24, 63); */
     position: fixed;
@@ -40,6 +41,8 @@ a {
 li:hover {
     border-bottom: 2px solid white;
 }
+
+
 
 
 
@@ -74,13 +77,61 @@ li:hover {
 }
 
 .text-container {
-    width: 60%;
+    width: 80%;
     margin: auto;
+    justify-content: space-around;
     margin-top: 10%;
+    display: flex;
+    gap: 50px;
+    text-align: justify;
+    
 }
 
-.text-container:hover {
+.text-container h2:hover {
     color: rgb(64, 241, 241);
     transition: 500ms;
     cursor: pointer;
+  
+}
+
+/* SECTION 3 */
+
+.third-section {
+    width: 100%;
+    height: 30vh;
+}
+.faqs-container {
+    width: 70%;
+    margin: auto;
+    background-color: red;
+    background-color: rgba(71, 70, 70, 0.664);
+}
+
+
+/* Footer */
+
+.footer {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+    padding:  5px 0px;
+   vertical-align: middle;
+   display: flex;
+   justify-content: space-around;
+   
+   
+
+}
+ul {
+    margin: 10px;
+}
+.footer ul {
+    list-style-type: none;
+}
+.socials ul {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    list-style-type: none;
+    
 }
