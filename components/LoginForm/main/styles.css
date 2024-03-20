@@ -11,6 +11,7 @@ body {
     background-color: var(--primary-color);
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: white;
+    
 }
 /* Navbar styles */
 
@@ -34,6 +35,9 @@ body {
     display: flex;
     list-style: none;
     gap: 20px;
+}
+.banner {
+    display: none;
 }
 a {
     text-decoration: none;
