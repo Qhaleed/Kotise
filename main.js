@@ -1,6 +1,7 @@
 
 var submit = document.getElementById("submit");
 var signUpForm = document.getElementById("signUpForm");
+var signup = document.getElementById("signup");
 submit.addEventListener('click', function(event) {
   event.preventDefault();
 
@@ -43,9 +44,13 @@ if (password !== confirmPassword) {
       window.location.href = "components/LoginForm/main/index.html";
     } else {
       alert('Registration unsuccessful. Error 405');
+      signup.textContent = "Please proceed to login page";
       setTimeout(() => {
-        window.location.href = "components/LoginForm/main/index.html";
-      }, 500);
+        signup.textContent = "Redirecting..";
+      }, 800);
+      setTimeout(() => {
+        window.location.href = "components/LoginForm/index.html";
+      }, 1500);
     }
    
 })

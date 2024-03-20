@@ -10,3 +10,7 @@ body {
  .submitbtn:active {
     background-color: hsl(216, 100%, 70%);
  }
+.text {
+   margin: auto;
+   margin-top: 30px;
+}

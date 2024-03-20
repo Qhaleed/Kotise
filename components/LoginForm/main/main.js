@@ -25,5 +25,5 @@ var faqButton = document.getElementById('faqButton');
 var faqP = document.getElementById('faqP');
 
 faqButton.addEventListener('click', function () {
-    faqP.style.display = 'block';
+    faqP.style.display = 'none';
 })

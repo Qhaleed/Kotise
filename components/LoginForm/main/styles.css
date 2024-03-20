@@ -71,10 +71,11 @@ li:hover {
 
 .second-section {
     width: 100%;
-    height: 50vh;
+    height: 90vh;
  
     
 }
+
 
 .text-container {
     width: 80%;
@@ -94,12 +95,110 @@ li:hover {
   
 }
 
+    .new {
+        margin-left: 160px;
+    }
+
+
+    /* Carousel */
+    .article-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        margin-right: 50px;
+        overflow: hidden;
+        margin-top: 30px;
+        width: 100%;
+        gap: 205px;
+        display: flex;
+    
+    }
+    .article-container-second {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+        gap: 20px;
+        margin-right: 50px;
+        overflow: hidden;
+        margin-top: 30px;
+        width: 100%;
+        gap: 205px;
+        display: flex;
+      
+    }
+    .article-container-box {
+        width: 100px;
+        display: inline-block;
+        border-radius: 50px;
+        animation: flowGrid 50s linear infinite;
+       
+    }
+    .article-container-second-box {
+        width: 100px;
+        display: inline-block;
+        border-radius: 50px;
+        animation: flowGridTwo 50s linear infinite;
+      
+       
+    }
+    .article-container-box img {
+        width: 300px;
+    }
+    .article-container-second-box img {
+        width: 300px;
+    }
+    .article-container-box:hover {
+        transform: scale(1.01);
+    
+    }
+    
+    
+    /* Key frames for animatiom */
+    @keyframes flowGrid {
+        0% {
+            transform: translateX(50%);
+        }
+        25% {
+            transform: translateX(-700%);
+        }
+        50% {
+            transform: translateX(-1500%);
+        }
+        75% {
+            transform: translateX(-700%);
+        }
+        100% {
+            transform: translateX(50%);
+        }
+    }
+    @keyframes flowGridTwo {
+        0% {
+            transform: translateX(-1000%);
+        }
+        25% {
+            transform: translateX(-500%);
+        }
+        50% {
+            transform: translateX(0%);
+        }
+        75% {
+            transform: translateX(-500%);
+        }
+        100% {
+            transform: translateX(-1000%);
+        }
+    }
+
+
+
 /* SECTION 3 */
 
 /* Set styles for the third section container */
 .third-section {
     width: 100%;
-    height: 30vh;
+    margin-top: 150px;
+    height: 60vh;
     gap: 20px; /* This gap property is not applicable to non-grid elements */
 }
 
@@ -126,6 +225,7 @@ li:hover {
     margin: 20px; /* Adjusted margin to create space between cards */
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .faq-card button{
@@ -147,7 +247,7 @@ li:hover {
 
 /* Style for FAQ card paragraphs */
 .faq-card p {
-    display: none; /* Hide the FAQ answers by default */
+    display: block;
 }
 
   
@@ -162,6 +262,7 @@ li:hover {
    vertical-align: middle;
    display: flex;
    justify-content: space-around;
+   margin-top: 200px;
    
    
 
