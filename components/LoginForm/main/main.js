@@ -15,12 +15,15 @@ function scrollFuncntion () {
     }
 }
 
-var nextImage = document.getElementById('next-image');
+
 
 nextImage.addEventListener('click', function next () {
     
 })
 
-var arrayOfContents = [
-    
-]
+var faqButton = document.getElementById('faqButton');
+var faqP = document.getElementById('faqP');
+
+faqButton.addEventListener('click', function () {
+    faqP.style.display = 'block';
+})
