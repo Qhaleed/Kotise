@@ -36,7 +36,7 @@ body {
     list-style: none;
     gap: 20px;
 }
-.banner img{
+.banner{
     display: none;
 }
 a {
@@ -336,6 +336,7 @@ video {
     height: 90vh;
     overflow: hidden;
     background: url(../../../assets/images/mobile.webp);
+    display: block;
 }
 .banner img {
     width: 100%;
