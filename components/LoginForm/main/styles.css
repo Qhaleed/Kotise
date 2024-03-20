@@ -24,8 +24,12 @@ body {
     position: fixed;
     z-index: 1;
     width: 93%;
-    
+    @media (max-width: 768px) {
+        padding: 5px;
+        
+    }
 }
+
 .navbar ul {
     display: flex;
     list-style: none;
@@ -61,17 +65,24 @@ li:hover {
     object-fit: cover;
     background: url(assets/Tokyo\ Underground.\ _\ 4K.mp4);
     z-index: 0;
+    @media (max-width: 768px) {
+        min-height: 30vh;
+    }
     
 }
 .hero video {
     width: 100%;
+    @media (max-width: 768px) {
+        min-height: 50vh;
+    }
 }
 
 /* second-section */
 
 .second-section {
-    width: 100%;
+    width: 90%;
     height: 90vh;
+    margin: auto;
  
     
 }
@@ -280,4 +291,30 @@ ul {
     list-style-type: none;
     font-size: 30px;
     
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 768px) {
+  .navbar .secondul {
+    display: none;
+  }
+  .navbar {
+  
+    width: 100%;
+  }
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+  }
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr); /* Changed 2fr to 1fr for equal width columns */
+    gap: 0px; /* Add gap between grid items */
+}
+.third-section {
+    height: 100vh;
+}
+
 }
