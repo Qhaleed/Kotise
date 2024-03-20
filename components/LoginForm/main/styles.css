@@ -81,7 +81,7 @@ li:hover {
 
 .second-section {
     width: 90%;
-    height: 90vh;
+    height: 60vh;
     margin: auto;
  
     
@@ -315,6 +315,27 @@ ul {
 }
 .third-section {
     height: 100vh;
+}
+li a{
+    color: black;
+}
+.new {
+    font-size: 20px;
+    margin: 0;
+    margin-left: 3%;
+}
+video {
+    display: none;
+}
+.banner {
+    width: 100%;
+    height: 90vh;
+    overflow: hidden;
+    background: url(../../../assets/images/mobile.webp);
+}
+.banner img {
+    width: 100%;
+    height: 100%;
 }
 
 }
