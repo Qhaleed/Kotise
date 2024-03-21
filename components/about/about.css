@@ -4,6 +4,7 @@ body {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-family: poppins;
     margin: 0;
+    transition: 500ms;
 }
 * {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
@@ -35,7 +36,7 @@ body {
 }
 a {
     text-decoration: none;
-    color: white;
+    color: black;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 500;
 }
@@ -168,3 +169,83 @@ ul {
     font-size: 30px;
     
 }
+
+/* Responsive control */
+
+@media (max-width: 768px) {
+  
+    .section-1 {
+        width: 100%;
+        padding-top: 100px;
+    }
+    .navbar {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      background-color: white;
+      
+      
+    }
+    .section-2 {
+        display: flex;
+        flex-direction: column;
+    }
+    .jdmlogo {
+        display: none;
+    }
+    .detail-box {
+        width: 90%;
+        margin: auto;
+    }
+    .info-container {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+     
+    }
+    .part1, .part2 {
+        background-color: black;
+        text-align: center;
+    }
+    .text-container {
+      display: flex;
+      flex-direction: column;
+      font-size: 10px;
+    }
+    .faq-grid {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr); /* Changed 2fr to 1fr for equal width columns */
+      gap: 0px; /* Add gap between grid items */
+  }
+  .third-section {
+      height: 100vh;
+  }
+  li a{
+      color: black;
+  }
+  .new {
+      font-size: 20px;
+      margin: 0;
+      margin-left: 3%;
+  }
+  video {
+      display: none;
+  }
+  .banner {
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+      background: url(../../../assets/images/mobile.webp);
+      display: block;
+  }
+  .banner img {
+      width: 100%;
+      height: 100%;
+  }
+  .menu {
+      display: block;
+      color: black;
+  }
+  }

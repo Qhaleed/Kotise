@@ -7,7 +7,7 @@ window.onscroll = function (){
 
 function scrollFuncntion () {
     if (document.body.scrollTop > 15 || document.documentElement.scrollTop > 15) {
-        navbar.style.backgroundColor = "rgba(71, 50, 70, 0.364)";
+        navbar.style.backgroundColor = "white";
         navbar.style.transition = "500ms";
     }
     else  {
