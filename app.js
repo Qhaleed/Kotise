@@ -13,16 +13,7 @@ let accounts = [
     { username: 'user2', password: 'password2' }
 ];
 
-// // Login endpoint
-// app.post('/login', (req, res) => {
-//     const { username, password } = req.body;
-//     const account = accounts.find(acc => acc.username === username && acc.password === password);
-//     if (account) {
-//         res.json({ message: 'Login successful' });
-//     } else {
-//         res.status(401).json({ message: 'Invalid username or password' });
-//     }
-// });
+
 
 // Create account endpoint
 app.post('/api/register', (req, res) => {
